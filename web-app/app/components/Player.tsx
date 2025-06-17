@@ -3,17 +3,32 @@
 import { Pause, Play, SkipBack, SkipForward } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 
+// const tracks = [
+//     {
+//         title: 'Chay Ngay Di',
+//         artist: 'MTP',
+//         src: 'https://zingmp3.vn/album/Chay-Ngay-Di-Single-Son-Tung-M-TP/ZOCZU0FZ.html',
+//         thumbnail: 'https://upload.wikimedia.org/wikipedia/vi/8/85/Chay_ngay_di.png',
+//     },
+//     {
+//         title: 'Hay Trao Cho Anh',
+//         artist: 'MTP',
+//         src: '/audios/lofi2.mp3',
+//         thumbnail: 'https://i.ytimg.com/vi/knW7-x7Y7RE/maxresdefault.jpg',
+//     },
+// ];
+
 const tracks = [
     {
-        title: 'Chay Ngay Di',
-        artist: 'MTP',
-        src: 'https://zingmp3.vn/album/Chay-Ngay-Di-Single-Son-Tung-M-TP/ZOCZU0FZ.html',
+        title: 'Lofi Chill',
+        artist: 'NCS',
+        src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3',
         thumbnail: 'https://upload.wikimedia.org/wikipedia/vi/8/85/Chay_ngay_di.png',
     },
     {
-        title: 'Hay Trao Cho Anh',
-        artist: 'MTP',
-        src: '/audios/lofi2.mp3',
+        title: 'Calm Vibes',
+        artist: 'NCS',
+        src: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3',
         thumbnail: 'https://i.ytimg.com/vi/knW7-x7Y7RE/maxresdefault.jpg',
     },
 ];
