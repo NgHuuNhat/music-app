@@ -102,7 +102,7 @@ export default function Player() {
             <img
                 src={tracks[currentTrack].thumbnail}
                 alt="Cover"
-                className="w-40 h-40 rounded-2xl object-cover shadow-xl mb-6"
+                className="w-60 h-70 rounded-2xl object-cover shadow-xl mb-6"
             />
             <h2 className="text-2xl font-semibold">{tracks[currentTrack].title}</h2>
             <p className="text-gray-700 mt-1 text-xs">{tracks[currentTrack].artist}</p>
