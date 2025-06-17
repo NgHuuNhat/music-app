@@ -102,13 +102,15 @@ export default function Player() {
             <img
                 src={tracks[currentTrack].thumbnail}
                 alt="Cover"
-                className="w-60 h-50 rounded-2xl object-cover shadow-xl mb-4"
+                className="w-60 h-70 rounded-2xl object-cover shadow-xl"
             />
-            <h2 className="text-2xl font-semibold">{tracks[currentTrack].title}</h2>
-            <p className="text-gray-700 mt-1 text-xs">{tracks[currentTrack].artist}</p>
+            <div className='my-5'>
+                <h2 className="text-2xl font-semibold">{tracks[currentTrack].title}</h2>
+                <p className="text-gray-700 mt-1 text-xs">{tracks[currentTrack].artist}</p>
+            </div>
 
             {/* Progress + time */}
-            <div className="w-full mt-3">
+            <div className="w-full">
                 <input
                     type="range"
                     min={0}
@@ -119,14 +121,14 @@ export default function Player() {
                 />
 
 
-                <div className="flex justify-between text-sm text-gray-600 mt-1">
+                <div className="flex justify-between text-sm text-gray-600">
                     <span>{formatTime(currentTime)}</span>
                     <span>{formatTime(duration)}</span>
                 </div>
             </div>
 
             {/* Controls */}
-            <div className="flex items-center justify-center space-x-6 mt-4">
+            <div className="flex items-center justify-center space-x-6 my-5">
                 <button onClick={prevTrack} className="text-white hover:text-zinc-600 transition-all cursor-pointer">
                     <SkipBack size={32} />
                 </button>
