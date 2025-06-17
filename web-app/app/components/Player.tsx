@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Player() {
     return (
-        <div className="rounded-[20px] bg-red-100 flex flex-col items-center justify-center text-center px-4 pt-10">
+        <div className="rounded-[20px] bg-red-200 flex flex-col items-center justify-center text-center px-4 pt-10">
             <img
                 src="https://upload.wikimedia.org/wikipedia/vi/8/85/Chay_ngay_di.png"
                 alt="Music Cover"
