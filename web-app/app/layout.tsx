@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import BottomTab from "./components/BottomTab";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +28,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <main className="my-10 min-h-120 w-full max-w-xs mx-auto rounded-[20px] bg-red-200 flex flex-col items-center justify-center text-center p-5">
+          {children}
+        </main>
+        <BottomTab />
       </body>
     </html>
   );

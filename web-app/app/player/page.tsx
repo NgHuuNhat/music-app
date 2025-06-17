@@ -98,17 +98,17 @@ export default function Player() {
     };
 
     return (
-        <div className="w-full max-w-xs mx-auto rounded-[20px] bg-red-200 flex flex-col items-center justify-center text-center px-6 py-10">
+        <div className='flex flex-col items-center justify-center'>
             <img
                 src={tracks[currentTrack].thumbnail}
                 alt="Cover"
-                className="w-60 h-70 rounded-2xl object-cover shadow-xl mb-6"
+                className="w-60 h-50 rounded-2xl object-cover shadow-xl mb-4"
             />
             <h2 className="text-2xl font-semibold">{tracks[currentTrack].title}</h2>
             <p className="text-gray-700 mt-1 text-xs">{tracks[currentTrack].artist}</p>
 
             {/* Progress + time */}
-            <div className="w-full mt-6">
+            <div className="w-full mt-3">
                 <input
                     type="range"
                     min={0}
@@ -126,7 +126,7 @@ export default function Player() {
             </div>
 
             {/* Controls */}
-            <div className="flex items-center justify-center space-x-6">
+            <div className="flex items-center justify-center space-x-6 mt-4">
                 <button onClick={prevTrack} className="text-white hover:text-zinc-600 transition-all cursor-pointer">
                     <SkipBack size={32} />
                 </button>
