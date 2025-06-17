@@ -98,14 +98,14 @@ export default function Player() {
     };
 
     return (
-        <div className="w-full max-w-xl mx-auto rounded-[20px] bg-red-200 flex flex-col items-center justify-center text-center px-6 py-10">
+        <div className="w-full max-w-xs mx-auto rounded-[20px] bg-red-200 flex flex-col items-center justify-center text-center px-6 py-10">
             <img
                 src={tracks[currentTrack].thumbnail}
                 alt="Cover"
-                className="w-64 h-64 rounded-2xl object-cover shadow-xl mb-6"
+                className="w-40 h-40 rounded-2xl object-cover shadow-xl mb-6"
             />
             <h2 className="text-2xl font-semibold">{tracks[currentTrack].title}</h2>
-            <p className="text-gray-700 mt-1">{tracks[currentTrack].artist}</p>
+            <p className="text-gray-700 mt-1 text-xs">{tracks[currentTrack].artist}</p>
 
             {/* Progress + time */}
             <div className="w-full mt-6">
